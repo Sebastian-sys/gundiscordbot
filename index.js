@@ -2,7 +2,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 // logowanie
-client.login("nie ma");
+client.login("Njc2MTg2NjY1Nzc3MjMzOTMw.Xka_cA.b9XMiIvofFR4HQ8ICHeQU02GZOU");
 
 
 
@@ -12,7 +12,17 @@ client.on("ready", () => {
 
     client.user.setGame("Spamming /gun");
 });
+  const express = require('express');
+  const keepalive = require('express-glitch-keepalive');
+  
+  const app = express();
+  
+  app.use(keepalive);
 
+  app.get('/', (req, res) => {
+    response.sendStatus(200);
+  });
+  app.listen(process.env.PORT);
 // odpowiadanie
 client.on("message", (message) => {
     if (message.author.bot) return;
@@ -65,3 +75,4 @@ client.on("message", (message) => {
         message.reply("Just Recieved:")
     }
 });
+
